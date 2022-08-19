@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const {merge} = require('webpack-merge');
 const commonconfig = require('./webpack.common.js')
 module.exports = (envVars) => {
