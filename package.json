@@ -6,7 +6,7 @@
   "author": "xiron9090 <xiron9090@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack server --config webpack/webpack.config.js --env env=dev --open",
+    "start": "webpack server --config webpack/webpack.config.js --env env=dev ",
     "build": "webpack  --config webpack/webpack.config.js --env env=prod "
   },
   "dependencies": {
@@ -19,11 +19,13 @@
     "@babel/preset-env": "^7.18.10",
     "@babel/preset-react": "^7.18.6",
     "@babel/preset-typescript": "^7.18.6",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
+    "react-refresh": "^0.14.0",
     "style-loader": "^3.3.1",
     "typescript": "^4.7.4",
     "webpack": "^5.74.0",
