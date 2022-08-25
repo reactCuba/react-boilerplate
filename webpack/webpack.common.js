@@ -1,5 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 module.exports = {
   entry: path.resolve(__dirname, '..', './src/index.tsx'),
   resolve: {
@@ -13,8 +14,8 @@ module.exports = {
         use: [
           {
             loader: 'babel-loader',
-          }
-        ]
+          },
+        ],
       },
       {
         test: /\.css$/,
@@ -28,7 +29,7 @@ module.exports = {
         test: /\.(woff(2)?|eot|ttf|otf|svg)$/,
         use: 'asset/inline',
       },
-    ]
+    ],
   },
   output: {
     path: path.resolve(__dirname, '..', './build'),
